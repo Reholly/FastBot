@@ -13,7 +13,9 @@ public class StartCommand : ICommand
     public StartCommand()
     {
         _client = new TelegramBotClient("6705659421:AAEHdWwkiAbUfrP-q1WoipLZM3QWMxnY5mA");
-        Name = "/start";}
+        Name = "/start";
+        
+    }
 
     public StartCommand(string name)
     {

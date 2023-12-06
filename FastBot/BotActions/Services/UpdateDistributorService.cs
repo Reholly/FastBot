@@ -1,3 +1,4 @@
+using FastBot.BotActions.Сontracts;
 using FastBot.Exceptions;
 using Telegram.Bot.Types;
 
@@ -6,7 +7,13 @@ namespace FastBot.BotActions.Services;
 public class UpdateDistributorService
 {
     private Dictionary<long, CommandExecutorService> _executors = new Dictionary<long, CommandExecutorService>();
+    private List<ICommand> _commands;
 
+    public UpdateDistributorService(List<ICommand> commands)
+    {
+        _commands = commands;
+    }
+    
     public async Task DistributeUpdateAsync(Update update)
     {
         if (update.Message is null)
@@ -20,7 +27,7 @@ public class UpdateDistributorService
             return;
         }
 
-        executor = new CommandExecutorService();
+        executor = new CommandExecutorService(_commands);
         _executors.Add(update.Message.Chat.Id, executor);
         await executor.GetUpdateAsync(update);
     }

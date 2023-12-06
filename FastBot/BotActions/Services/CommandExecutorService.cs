@@ -9,9 +9,9 @@ public class CommandExecutorService
     private List<ICommand> _commands;
     private IListener? _currentListener;
 
-    public CommandExecutorService()
+    public CommandExecutorService(List<ICommand> commands)
     {
-        _commands = GetCommandsFromAssembly();
+        _commands = commands;
     }
     
     public async Task GetUpdateAsync(Update update)

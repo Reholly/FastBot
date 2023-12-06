@@ -2,6 +2,7 @@
 
 using FastBot.Bot;
 using FastBot.BotActions.Implementations;
+using FastBot.BotActions.Сontracts;
 
 /*
  * var registrationRoot = new Root("/register", new RegisterHandler());
@@ -36,22 +37,22 @@ using FastBot.BotActions.Implementations;
  * await bot.RunAsync();
  * 
  */
+
+var list = new List<ICommand>
+{
+    new StartCommand()
+};
+
 var bot = Bot.Create()
-    .SetBotConfiguration(BotConfiguration.Create()
-        .SetBotName("TestingLibraryCSUBot")
-        .SetBotApiToken("6705659421:AAEHdWwkiAbUfrP-q1WoipLZM3QWMxnY5mA")
-        .UseLongPolling()
-        .Build())
+    .SetBotName("TestingLibraryCSUBot")
+    .SetBotApiToken("6705659421:AAEHdWwkiAbUfrP-q1WoipLZM3QWMxnY5mA")
+    .SetCommands(list)
+    .UseWebhooks(/*"https://localhost:5274/"*/)
     .Build();
 
-bot.AddCommand(new StartCommand("/start"));
-
-
-bot.Run();
+await bot.Run();
 Console.WriteLine("бот запущен");
-await Task.Delay(50000);
 
-bot.Stop();
 
 
             
