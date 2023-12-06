@@ -1,1 +1,1 @@
-<h1 align="center"> Hi there, this is a little library for Telegram Bots on C#.</h1>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Hi+there%2C+this+is+a+little+library+for+Telegram+Bots+on+.NET)](https://git.io/typing-svg)
