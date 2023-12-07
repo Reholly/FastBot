@@ -23,7 +23,15 @@
 <p> After all the configuration of the Bot, you can create it using another method - Build()
 
 <h1>Commands</h1>
-<p> Ready-made FastBot commands are available in a large number of commands for the bot. The commands are divided into simple and composite ones. For example, you can simply add a reply message in response to some command by adding a <code> new Simple Message Command("/your command", "your message");</code></p>
+<p> Ready-made FastBot commands are available in a large number of commands for the bot. The commands are divided into simple and composite ones. For example, you can simply add a reply message in response to some command by adding a <code> new SimpleMessageCommand("/your_command", "your message");</code></p>
+<p>Each simple command implements the ICommand interface. The library contains some ready-made commands, but the user can also create their own by simply implementing the desired interface.</p>
+
+<p>Here are examples of ready-made simple commands: </p>
+<p><code>SimpleMessageCommand(string command, string message)</code> - sending text message in response of <code>command</code></p>
+<p><code>SimpleAudioCommand(string command, string uri)</code> - sending audio message in response of <code>command</code></p>
+<p><code>SimplePictureCommand(string command, string uri)</code> - sending image message in response of <code>command</code></p>
+
+
 <h1>Exceptions</h1>
 <h1>Use in ASP projects</h1>
 
