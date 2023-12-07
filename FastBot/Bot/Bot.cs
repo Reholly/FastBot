@@ -12,7 +12,6 @@ public class Bot
     public string Name { get; set; } = string.Empty;
     public string BotApiKey { get; set; } = string.Empty;
     public bool UseWebhooks { get; set; }
-    public bool UseLongPolling { get; set; }
     public string WebhooksHttpsLink { get; set; } = string.Empty;
     public List<ICommand> Commands { get; set; } = null!;
     

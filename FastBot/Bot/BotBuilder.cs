@@ -36,26 +36,9 @@ public class BotBuilder
         return this;
     }
 
-    public BotBuilder UseLongPolling()
+    public BotBuilder UseWebhooks()
     {
-        if (_bot.UseWebhooks)
-            throw new BotBuildingException("Can not use long polling. Bot already use webhooks.");
-        
-        _bot.UseLongPolling = true;
-        
-        return this;
-    }
-
-    public BotBuilder UseWebhooks(/*string addressToListen*/)
-    {
-        if (_bot.UseLongPolling)
-            throw new BotBuildingException("Can not use webhooks. Bot already use long polling.");
-        // if (string.IsNullOrEmpty(addressToListen))
-        //     throw new BotBuildingException("Can not use link for webhook: link is null or empty.");
-        
         _bot.UseWebhooks = true;
-        //_bot.WebhooksHttpsLink = addressToListen;
-        
         return this;
     }
 
@@ -77,10 +60,9 @@ public class BotBuilder
 
     public Bot Build()
     {
-        if (_bot is  { UseWebhooks: false, UseLongPolling: false })
-        {
+        if (!_bot.UseWebhooks)
             throw new BotBuildingException("Can not build bot. Webhooks or long polling are not assigned.");
-        }
+        
         return _bot;
     }
 
