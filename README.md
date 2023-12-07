@@ -14,13 +14,13 @@
 <p>Here is documentation for working with FastBot. You also may check Example Project. </p>
 
 <h1>Bot</h1>
-To create a Bot, you need to use BotBuilder. You can create it step by step with this handy builder. First you need to call the Bot.Create(), after which you can assign the following: 
-- SetBotName() - to specify the name of the Bot inside the project
-- SetBotApiToken() - to specify the telegram API token
-- SetCommands() - to specify the List of commands (see below about commands) 
-- UseWebhooks - to indicate the use of webhooks
+<p> To create a Bot, you need to use BotBuilder. You can create it step by step with this handy builder. First you need to call the Bot.Create(), after which you can assign the following: 
+<p>- SetBotName() - to specify the name of the Bot inside the project </p>
+<p> - SetBotApiToken() - to specify the telegram API token  </p>
+<p> - SetCommands() - to specify the List of commands (see below about commands)   </p>
+<p> - UseWebhooks - to indicate the use of webhooks  </p>
 
-After all the configuration of the Bot, you can create it using another method - Build()
+<p> After all the configuration of the Bot, you can create it using another method - Build()
 
 <h1>Commands</h1>
 <h1>Exceptions</h1>
