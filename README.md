@@ -23,6 +23,7 @@
 <p> After all the configuration of the Bot, you can create it using another method - Build()
 
 <h1>Commands</h1>
+<p> Ready-made FastBot commands are available in a large number of commands for the bot. The commands are divided into simple and composite ones. For example, you can simply add a reply message in response to some command by adding a <code> new Simple Message Command("/your command", "your message");</code></p>
 <h1>Exceptions</h1>
 <h1>Use in ASP projects</h1>
 
