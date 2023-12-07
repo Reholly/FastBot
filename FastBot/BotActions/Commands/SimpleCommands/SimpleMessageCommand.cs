@@ -1,22 +1,21 @@
-using FastBot.BotActions.Сontracts;
+using FastBot.BotActions.Commands.Сontracts;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
-namespace WebApplication1.Commands;
+namespace FastBot.BotActions.Commands.SimpleCommands;
 
-public class ExampleCommand : ICommand
+public class SimpleMessageCommand : ICommand
 {
     public string Name { get; init; }
-    
-    private TelegramBotClient _client;
-    private string _message = string.Empty;
 
-    public ExampleCommand(string name, string message)
+    private string _message;
+    private TelegramBotClient _client = null!;
+
+    public SimpleMessageCommand(string name, string message)
     {
         Name = name;
         _message = message;
     }
-
     public void SetTelegramBotClient(TelegramBotClient client)
     {
         _client = client;

@@ -1,4 +1,4 @@
-using FastBot.BotActions.Сontracts;
+using FastBot.BotActions.Commands.Сontracts;
 using FastBot.Exceptions;
 using Telegram.Bot;
 

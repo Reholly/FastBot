@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastBot", "FastBot\FastBot.csproj", "{F5D52AB4-909A-4235-AA04-EDBC9B96F50F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{D1244DDD-9074-49DC-B5CF-CD7ED8848DA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastBot", "FastBot\FastBot.csproj", "{737612A5-3632-47FD-A82D-0C567F1760A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,13 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F5D52AB4-909A-4235-AA04-EDBC9B96F50F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5D52AB4-909A-4235-AA04-EDBC9B96F50F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5D52AB4-909A-4235-AA04-EDBC9B96F50F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5D52AB4-909A-4235-AA04-EDBC9B96F50F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1244DDD-9074-49DC-B5CF-CD7ED8848DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1244DDD-9074-49DC-B5CF-CD7ED8848DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1244DDD-9074-49DC-B5CF-CD7ED8848DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1244DDD-9074-49DC-B5CF-CD7ED8848DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737612A5-3632-47FD-A82D-0C567F1760A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737612A5-3632-47FD-A82D-0C567F1760A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737612A5-3632-47FD-A82D-0C567F1760A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737612A5-3632-47FD-A82D-0C567F1760A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

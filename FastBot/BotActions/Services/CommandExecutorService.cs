@@ -1,5 +1,4 @@
 using FastBot.BotActions.Commands.Сontracts;
-using FastBot.BotActions.Сontracts;
 using Telegram.Bot.Types;
 
 namespace FastBot.BotActions.Services;
