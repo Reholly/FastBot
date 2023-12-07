@@ -33,7 +33,7 @@
 
 <p>Composite commands implement the IListener interface. Classes implementing this interface contain <code>CommandExecutorService</code> to communicate with the current chat and can also accept Update. In the implementation of the IListener interface, the class must also implement ICommand in order to be added as a command.</p>
 
-<p>Here are examples of ready-made simple commands: </p>
+<p>Here are examples of ready-made composite commands: </p>
 <p><code> Oopps, there is nothing...</code></p>
 
 <h1>Exceptions</h1>
