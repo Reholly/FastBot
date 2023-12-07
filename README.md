@@ -9,5 +9,21 @@
 <p> - Uses webhooks</p>
 <p> - Encapsulate all logic inside and you could write only high-level commands</p>
 
+<h1>Documentation</h1>
+
+<p>Here is documentation for working with FastBot. You also may check Example Project. </p>
+
+<h1>Bot</h1>
+To create a Bot, you need to use BotBuilder. You can create it step by step with this handy builder. First you need to call the Bot.Create(), after which you can assign the following: 
+- SetBotName() - to specify the name of the Bot inside the project
+- SetBotApiToken() - to specify the telegram API token
+- SetCommands() - to specify the List of commands (see below about commands) 
+- UseWebhooks - to indicate the use of webhooks
+
+After all the configuration of the Bot, you can create it using another method - Build()
+
+<h1>Commands</h1>
+<h1>Exceptions</h1>
+<h1>Use in ASP projects</h1>
 
 
