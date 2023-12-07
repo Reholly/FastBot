@@ -45,7 +45,7 @@
 
 For using in ASP projects you should do four steps:
 <p>1) Create Controller with <code>UpdateDistributorService</code> dependency like:
-<code>[ApiController]
+<p><code>[ApiController]
 public class ExampleController : Controller
 {
     private readonly UpdateDistributorService _updateDistributorService;
@@ -62,6 +62,7 @@ public class ExampleController : Controller
     }
 }
 </code></p>
+</p>
 <p>2) You should create HttpPost method in controller that takes requests from your Webhook</p>
 <p>3) Call <code>UpdateDistributor</code> method <code>DistributeUpdateAsync</code> for accepting updates.</p>
 <p>4) Register your bot as dependency in <code>Startup</code> or <code>Program</code> by using extension method for IServiceCollection <code>AddBot</code></p>
