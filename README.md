@@ -30,11 +30,11 @@
 <p><code>SimpleMessageCommand(string command, string message)</code> - sending text message in response of <code>command</code></p>
 <p><code>SimpleAudioCommand(string command, string uri)</code> - sending audio message in response of <code>command</code> by uri</p>
 <p><code>SimplePictureCommand(string command, string uri)</code> - sending image message in response of <code>command</code> by uri</p>
+<p><code>SimpleVideoCommand(string command, string uri)</code> - sending video message in response of <code>command</code> by uri</p>
 
 <p>Composite commands implement the IListener interface. Classes implementing this interface contain <code>CommandExecutorService</code> to communicate with the current chat and can also accept Update. In the implementation of the IListener interface, the class must also implement ICommand in order to be added as a command.</p>
 
-<p>Here are examples of ready-made composite commands: </p>
-<p><code> Oopps, there is nothing...</code></p>
+<p> All composite commands should be implemented by user. </p>
 
 <h1>Exceptions</h1>
 <p>In project we have 2 types of Exceptions:</p>
